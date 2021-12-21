@@ -7,11 +7,11 @@ const article = circle.querySelectorAll("article");
 for(let el of article){
     // article에 마우스 포인터를 올리면 부모인 #article의 animation-play-state값을 "paused"로 변경
     el.addEventListener("mouseenter", e=>{
-        circle.getElementsByClassName.animationPlayState = "paused";
+        circle.style.animationPlayState = "paused";
     });
 
     // article에서 마우스가 떠나면 부모인 #circle의 animation-play-state 값을 다시 "running"으로 변경
     el.addEventListener("mouseleave",e=>{
-        circle.getElementsByClassName.animationPlayState = "running";
+        circle.style.animationPlayState = "running";
     });
 }
